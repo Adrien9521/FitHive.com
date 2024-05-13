@@ -11,7 +11,7 @@
     padding:0;
     text-decoration:none;
 }
-a:visited{
+a{
     color:inherit; /*culoarea linkului nu afecteaza nimic*/
 }
 #container1{
