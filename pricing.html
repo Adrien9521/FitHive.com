@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pricing.css">
+    <div id="container1">
+        <a href="index.html"><img id="logo" src="Imagini/logo.png"></a>
+        <ul id="Homebar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    <button id="button"><a href="pricing.html">GET STARTED</a></button>
+        </div>
+</head>
+<body>
+<div id="section_1"></div>
+<div id="section2">
+    <div  id="box_p"></div>
+    <div id="box1">
+       <table id="tabel1" style="border-collapse:collapse; width:80vh;">
+        <tr>
+        <th style="border:3px solid #FFDE59; background-color:#FFDE59; text-align:center; font-size:5vh;"><span style="margin-left:3vh; font-family:'Ubuntu' ">DRONE</span> &#160;&#160;&#160;&#160;<span style="font-size:7vh; ">29.99$</span> <span style="font-size:3.5vh;">per month</span></th>    
+        </tr>
+        <tr>
+            <td style="border:3px solid #fff; background-color:#211F25;">
+            <ul style="list-style-type:disc; margin-left:7vh; margin-right:15px; font-size:35px; font-family:Barlow; color:white; ">
+                <li>Access to cardio area</li>
+                <li>Standard equipment usage</li>
+            </ul>
+            <button class="buttons_s">Join NOW</button>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <div id="box2" >
+        <table id="tabel1" style="border-collapse:collapse; width:100vh;">
+            <tr>
+            <th style="border:3px solid #E38315; background-color:#E38315; text-align:center; font-size:5vh;"><span style="margin-left:3vh; font-family:Ubuntu; ">WORKER BEE</span> &#160;&#160;&#160;&#160;<span style="font-size:7vh; ">49.99$</span> <span style="font-size:3.5vh;">per month</span></th>    
+            </tr>
+            <tr>
+                <td style="border:3px solid #E38315; background-color:#211F25;">
+                <ul style="list-style-type:disc; margin-left:7vh; margin-right:15px; font-size:35px; font-family:Barlow; color:white; ">
+                    <li>Access to cardio area</li>
+                    <li>Standard equipment usage</li>
+                    <li>Personalized workout plans</li>
+                </ul>
+                <button class="buttons_s" style="background-color:#E38315;">Join NOW</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="box3">
+        <table id="tabel1" style="border-collapse:collapse; width:90vh;">
+            <tr>
+            <th style="border:3px solid #FFDE59; background-color:#FFDE59; text-align:center; font-size:5vh;"><span style="margin-left:3vh; font-family:Ubuntu; ">QUEEN BEE</span> &#160;&#160;&#160;&#160;<span style="font-size:7vh; ">69.99$</span> <span style="font-size:3.5vh;">per month</span></th>    
+            </tr>
+            <tr>
+                <td style="border:3px solid #fff; background-color:#211F25;">
+                <ul style="list-style-type:disc; margin-left:7vh; margin-right:15px; font-size:35px; font-family:Barlow; color:white; ">
+                    <li>Access to cardio area</li>
+                    <li>Standard equipment usage</li>
+                    <li>Personalized workout plans</li>
+                    <li>Rush hour priority</li>
+                </ul>
+                <button class="buttons_s">Join NOW</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="hero">
+    <form name="submit-to-google-sheet">
+        <input type="email" name="Email" placeholder="Your email id" required>
+        <button type="submit"><img src="Imagini/send-icon.png" width="30px"></button>
+    </form>
+        <span class="spec_span" id="msg"></span>
+
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzNCyosvhSvJLGv6QUNWzyTorSyLEbYCN2KApeXAcH3_IbrXlOc5vGkJe6sxcnN1oyM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+              msg.innerHTML = "Thank you for subscribing!"
+              setTimeout(function(){
+                msg.innerHTML =""
+              }, 5000)
+              form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+<div id="subsol">
+    <hr style="border:none; background-color:#FFDE59; width:100%; height:0.1vh;">
+<div id="row1">
+   <ul id="list_bot" style="margin-left:20vh; list-style-type:none;">
+    <li><span class=list_title><a href="index.html">Home</a></span></li>
+    <li><a href="index.html#container2">Learn more</a></li>
+    <li><a href="index.html#container3">Locations</a></li>
+    <li><a href="index.html#container4">Our passion</a></li>
+   </ul> 
+   <ul id="list_bot" style="list-style-type:none;">
+    <li><span class=list_title><a href="about.html">About</a></span></li>
+    <li><a href="about.html#container2a">Benefits</a></li>
+    <li><a href="about.html#container2b">Who we are</a></li>
+    <li><a href="about.html#tit_jos">Why us</a></li>
+   </ul> 
+   <ul id="list_bot" style="list-style-type:none;">
+    <li><span class=list_title><a href="pricing.html">Pricing</a></span></li>
+    <li><a href="#section_1">Offers</a></li>
+    <li><a href="#section_1">Plans</a></li>
+    <li><a href="#spec_span">Subscribe</a></li>
+   </ul> 
+   <ul id="list_bot" style="list-style-type:none;">
+    <li><span class=list_title><a href="testimonials.html">Testimonials</a></span></li>
+    <li><a href="testimonials.html#testimonials">Touseeq</a></li>
+    <li><a href="testimonials.html#testimonials">Josephine</a></li>
+    <li><a href="testimonials.html#testimonials">Isaq</a></li>
+   </ul> 
+   <ul  id="list_bot" style="margin-right:30vh; list-style-type:none; font-family:'Poppins';">
+    <li><span class=list_title><a href="support.html">Support</a></span></li>
+         <li><a href="support.html#cont2">FAQ</a></li>
+         <li><a href="support.html#cont3">Contact us</a></li>
+         <li>Made by Andrian</li>
+    </ul> 
+</div>
+
+</div>
+
+</body>
+</html>

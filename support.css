@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Linia de mai sus importa fontul Barlow de pe Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+/*importa fontul archivo de pe google font*/
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*importa fontul spectral de pe google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/*importa fontul spectral de pe google font*/
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+}
+a:visited{
+    color:inherit; /*culoarea linkului nu afecteaza nimic*/
+}
+#container1{
+    height:8.5vh;
+    width:90%;
+    background-color:#262626;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1vh 5%;
+}
+#logo{
+    height: 11vh;
+    width:12vh;
+    margin-left:3%;
+    transition:all 0.3s ease 0s;
+}
+#logo:hover{
+    height: 12vh;
+    width: 13vh;
+    margin-left:2%;
+}
+#Homebar li{
+    display:inline-block; /*in rand*/
+    font-family:"Poppins";
+    padding:0 3vh;
+    transition:all 0.3s ease 0s; /*start un transition*/
+    color:#ffffff;
+    font-size:3.5vh;
+}
+#Homebar{
+    margin: left 50vh;
+}
+#Homebar li:hover{
+    color:#FFDE59;
+    font-size:4vh;
+}
+#button{
+    background-color:#ffffff;
+    font-family:"Barlow";
+    font-size:3vh;
+    border:none;
+    cursor:pointer; /*cursorul e pointer cand hover*/
+    transition:all 0.3s ease 0s; /*start un transition*/
+    align-items:center;
+    padding:5px 5px;
+    border-radius:5px;
+    height:6.5vh;
+    width:20vh;
+}
+#button:hover{
+    background-color:#FFDE59;
+    color:#ffffff
+}
+#cont2{
+    height:120vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#1D1C1D;
+}
+#title{
+    font-size:7vh;
+    font-family:"Poppins";
+    font: weight 700px;;
+    letter-spacing:2px;
+    margin-top:5vh;
+    color:#E38315;
+}
+#faq_content{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.question{
+    color:#E38315;
+}
+.question_space{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    height:15vh;
+    transition:all 0.5s ease 0s;
+}
+.question_space:hover{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    height:42vh;
+    .answer_space{
+        display:block;
+    }
+    .img_space{
+        width:50px;
+        height:50px;
+        align-self:center;
+        margin-right:2vh;
+        background-image:url(Imagini/arrow1.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+}
+.question_box{
+    width:100%;
+    height:15vh;
+    font-size:5vh;
+    font-family:"Poppins";
+    padding:2vh 2vh;
+    display:flex;
+    justify-content:space-between;
+    cursor:pointer;
+}
+.question{
+    margin-right:2vh;
+    height:50px;
+    align-self:center;
+}
+.img_space{
+    width:50px;
+    height:50px;
+    align-self:center;
+    margin-right:2vh;
+    background-image:url(Imagini/arrow.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.linie{
+    width:50%;
+    align-self:center;
+}
+.answer_space{
+    display:none;
+    width:100%;
+    height:15vh;
+    text-align:justify;
+}
+.answer{
+    font-size:3vh;
+    font-family:"Poppins";
+    color:white;
+}
+#cont3{
+    height:75vh;
+    background-color:#262626;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+#map{
+margin-top:7vh;
+margin-left:7vh;
+}
+#text_cont{
+    height:450;
+    margin-top:7vh;
+    margin-right:7vh;
+    width:40%;
+}
+#subsol{
+    position:relative;
+    width:100%;
+    height:25vh;
+    background-color:black;
+}
+.list_title{
+    font-size:5vh;
+    transition:all 0.3s ease 0s;
+}
+.list_title:hover{
+    text-shadow:
+    0 0 20px #E38315,  /* umbra interioara*/
+    0 0 40px #FFDE59,  /* umbra exterioara */
+    0 0 80px #d5ad0b; /* si mai exterioara */
+}
+#row1{
+    width:100%;
+    background-color:black;
+    height:25vh;
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:3vh;
+    font-family:"Poppins";
+    color:white;
+}
+#row2{
+    width:100%;
+    height:20vh;
+    font-family:"Poppins";
+    font-size:3vh;
+    display:flex;
+    position:relative;
+    align-items:center;
+    background-color:black;
+    color:white;
+}
+#bottom_list{
+    margin-left:20vh;
+    list-style-type:none;
+    transition:all 0.3s ease 0s;
+}
+#list_bot li:hover{
+    text-shadow:
+    0 0 20px #E38315,  /* umbra interioara*/
+    0 0 40px #FFDE59,  /* umbra exterioara */
+    0 0 80px #d5ad0b; /* si mai exterioara */
+}

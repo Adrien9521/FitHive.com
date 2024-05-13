@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Linia de mai sus importa fontul Barlow de pe Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+/*importa fontul archivo de pe google font*/
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*importa fontul spectral de pe google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/*importa fontul spectral de pe google font*/
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+}
+a:visited{
+    color:inherit; /*culoarea linkului nu afecteaza nimic*/
+}
+#container1{
+    height:8.5vh;
+    width:90%;
+    background-color:#262626;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1vh 5%;
+}
+#logo{
+    height: 11vh;
+    width:12vh;
+    margin-left:3%;
+    transition:all 0.3s ease 0s;
+}
+#logo:hover{
+    height: 12vh;
+    width: 13vh;
+    margin-left:2%;
+}
+#Homebar li{
+    display:inline-block; /*in rand*/
+    font-family:"Poppins";
+    padding:0 3vh;
+    transition:all 0.3s ease 0s; /*start un transition*/
+    color:#ffffff;
+    font-size:3.5vh;
+}
+#Homebar{
+    margin: left 50vh;
+}
+#Homebar li:hover{
+    color:#FFDE59;
+    font-size:4vh;
+}
+#button{
+    background-color:#ffffff;
+    font-family:"Barlow";
+    font-size:3vh;
+    border:none;
+    cursor:pointer; /*cursorul e pointer cand hover*/
+    transition:all 0.3s ease 0s; /*start un transition*/
+    align-items:center;
+    padding:5px 5px;
+    border-radius:5px;
+    height:6.5vh;
+    width:20vh;
+}
+#button:hover{
+    background-color:#FFDE59;
+    color:#ffffff
+}
+#section_1{
+    width:100%;
+    height:3vh;
+    background-image:url(Imagini/stripes.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    margin:0;
+    padding:0;
+}
+#section2{
+    background-color:#211F25;
+}
+#box_p{
+    width:40%;
+    height:30vh;
+    background-image:url(Imagini/Fithive_list.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+}
+#box1{
+    margin-top:3.5vh;
+    margin-bottom:3.5vh;
+}
+#box2{
+    margin-top:3.5vh;
+    margin-bottom:3.5vh;
+}
+#box3{
+    margin-top:3.5vh;
+}
+#tabel1{
+    margin-left:auto;
+    margin-right:auto;
+}
+.buttons_s{
+    height:8vh;
+    width:20vh;
+    border:none;
+    border-radius:5px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:3vh;
+    font-size:3vh;
+    font-family:"Barlow";
+    background-color:#FFDE59;
+    margin-bottom:3vh;
+    transition:all 0.3s ease 0s;
+    cursor:pointer;
+}
+.buttons_s:hover{
+    height:10vh;
+    width:30vh;
+}
+.hero{
+    width:100%;
+    height:30vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(Imagini/gym_t.jpg);
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+}
+form{
+    background:white;
+    display:flex;
+    width:fit-content;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5vh;
+    margin-bottom:5vh;
+}
+form input{
+    border:0;
+    outline: none;
+    height:70px;
+    width:400px;
+    font-size:16px;
+}
+form button{
+    background:#FFDE59;
+    border:none;
+    outline:none;
+    height:70px;
+    width:100px;
+    cursor:pointer;
+}
+.spec_span{
+    margin-top:10px;
+    color:#FFDE59;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+#block{
+display:flex;
+position:relative;
+margin-bottom:auto;
+}
+#subsol{
+    position:relative;
+    width:100%;
+    height:25vh;
+    background-color:black;
+}
+.list_title{
+    font-size:5vh;
+    transition:all 0.3s ease 0s;
+}
+.list_title:hover{
+    text-shadow:
+    0 0 20px #E38315,  /* umbra interioara*/
+    0 0 40px #FFDE59,  /* umbra exterioara */
+    0 0 80px #d5ad0b; /* si mai exterioara */
+}
+#row1{
+    width:100%;
+    background-color:black;
+    height:25vh;
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:3vh;
+    font-family:"Poppins";
+    color:white;
+}
+#row2{
+    width:100%;
+    height:20vh;
+    font-family:"Barlow";
+    font-size:3vh;
+    display:flex;
+    position:relative;
+    align-items:center;
+    background-color:black;
+    color:white;
+}
+#bottom_list{
+    margin-left:20vh;
+    list-style-type:none;
+    transition:all 0.3s ease 0s;
+}
+#list_bot li:hover{
+    text-shadow:
+    0 0 20px #E38315,  /* umbra interioara*/
+    0 0 40px #FFDE59,  /* umbra exterioara */
+    0 0 80px #d5ad0b; /* si mai exterioara */
+}
