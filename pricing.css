@@ -12,7 +12,7 @@
     text-decoration:none;
 }
 a{
-    color:inherit; /*culoarea linkului nu afecteaza nimic*/
+    color:inherit !important; /*culoarea linkului nu afecteaza nimic*/
 }
 #container1{
     height:8.5vh;

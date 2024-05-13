@@ -13,7 +13,7 @@
     font-family:"Poppins";
 }
 a{
-    color:inherit; /*culoarea linkului nu afecteaza nimic*/
+    color:inherit !important; /*culoarea linkului nu afecteaza nimic*/
 }
 a:visited{
     color:inherit; /*culoarea linkului nu afecteaza nimic*/
